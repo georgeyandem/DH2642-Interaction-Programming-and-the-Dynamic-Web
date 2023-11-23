@@ -1,0 +1,96 @@
+/* A debug class, used to separate components graphically during development */
+.debug {                     
+    border-style:solid; 
+    
+}
+.space{
+    /*padding-left: 10%;*/
+    margin: 5px;
+}
+
+.search_result {
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+    /*padding: 5px;*/
+    margin: 7px;
+}
+
+/* Summary view */
+.bigger_text{
+    font-size: 1.8em;
+}
+.back_to_summary_button {
+    float: right;
+    margin: 7px;
+}
+
+.align_right {
+    text-align: right;
+}
+
+/* Sidebar view */
+.sidebar_window {
+    width: 420px;
+}
+
+.sidebar_table {
+    table-layout: fixed;
+}
+
+.sidebar_text {
+    width: 250px;
+    overflow: hidden;
+}
+
+.sidebar_price {
+    width: 50px;
+    text-align: right;
+}
+
+/* Details view */
+.details_img_price {
+    display: inline-block;
+}
+
+.details_price {
+    border: 1px solid black;
+    float: right;
+} 
+
+.details_ingredients_buttons {
+    /*display: inline-block;*/
+}
+
+.details_ingredients {
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.details_button {
+    display: inline-block;
+}
+
+.details_instructions {
+    border: 1px solid black;
+    margin: 5px;
+}
+
+/* Application layout and responsive layout */
+
+@media (min-width:525px) {
+    .flex_parent {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.sidebar {
+    flex: 0.1;
+    border: 1px solid black;
+}
+
+.main_content {
+    flex: 0.9;
+}
